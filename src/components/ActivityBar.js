@@ -12,16 +12,10 @@ class ActivityBar extends React.Component {
     }
 
     handleDescriptionChange(event) {
-        // const {handleChange, index} = this.props ;
-        // const newDescription = event.target.value;
-        // handleChange(newDescription, 'description', index);
         this.setState({description : event.target.value})
     }
 
     handleDurationChange(event) {
-        // const {handleChange, index} = this.props ;
-        // const newDuration = event.target.value;
-        // handleChange(newDuration, 'duration', index);
         this.setState({duration : event.target.value})
     }
 
@@ -61,11 +55,6 @@ class ActivityBar extends React.Component {
                         <button className="btn btn-outline-secondary" type="button" onClick={() => handleDeleting(index)}>DELETE</button>
                     </div>
                 </div>
-                {/*<div className='bar__type'> {activity.type} </div>*/}
-                {/*<input className='bar__input' value={description} type='text' onChange={this.handleDescriptionChange}/>*/}
-                {/*<input className='bar__input' value={duration} type='number' onChange={this.handleDurationChange}/>*/}
-                {/*<button onClick={() => handleUpdating(index, description, duration)}>UPDATE</button>*/}
-                {/*<button onClick={() => handleDeleting(index)}>DELETE</button>*/}
             </div>
         )
     }

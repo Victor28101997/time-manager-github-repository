@@ -2,8 +2,8 @@ import React from "react";
 import {PieChart} from 'react-minimal-pie-chart';
 
 class Summary extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             selected : 0
         }
